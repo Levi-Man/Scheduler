@@ -11,5 +11,5 @@ Then the hour and task are saved in local storage
 When the user refreshes the page
 Then the tasks saved persist on the page
 
-<img src="[./Assets/samplePage.jpg](https://github.com/Levi-Man/Scheduler/blob/main/Assets/samplePage.jpg.png)https://github.com/Levi-Man/Scheduler/blob/main/Assets/samplePage.jpg.png">
+<img src="Assets/samplePage.jpg.png">
 
