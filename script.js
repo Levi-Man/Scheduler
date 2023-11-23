@@ -15,10 +15,11 @@ $(function () {
       e.preventDefault();
 
       let taskInput = document.querySelector('.textInput').value;
-      localStorage.setItem("task" + e.srcElement.id, taskInput);
-      console.log(taskInput);
+      localStorage.setItem("task " + this.id, taskInput);
+      console.log("test", taskInput);
 
-      console.log("button clicked", e.srcElement.id)
+      console.log("button clicked", this.id)
+      
     })
   }
 
