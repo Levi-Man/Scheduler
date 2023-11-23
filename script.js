@@ -15,7 +15,7 @@ $(function () {
   let buttonSubmit = document.getElementsByClassName("btn")
 
   for (i = 0; i < buttonSubmit.length; i++) {
-    buttonSubmit[i].addEventListener("click", function (e) {
+    buttonSubmit[i].addEventListener("click", function (e) { 
       e.preventDefault();
 
       let taskInput = document.querySelector('.textInput').value;
@@ -66,7 +66,7 @@ let dayDate = setInterval(function () {
 
 // Get the current hour
 // const currentHour = new Date().getHours();
-let currentHour = 18;
+let currentHour = 14;
 
 
 // Get the element you want to change the class of
