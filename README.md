@@ -15,4 +15,4 @@ Then the tasks saved persist on the page
 
 deployed page: https://levi-man.github.io/Scheduler/
 
-github repo: https://www.github.com/Levi-Man/Scheduler
+github repo: https://github.com/Levi-Man/Scheduler
