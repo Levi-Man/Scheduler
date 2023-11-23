@@ -92,8 +92,8 @@ $(document).ready(function () {
     , 10000)
 
   // Get the current hour
-  // const currentHour = new Date().getHours();
-  let currentHour = 8;
+  const currentHour = new Date().getHours();
+  // let currentHour = 8;
 
 
   // Get the element you want to change the class of
