@@ -7,28 +7,43 @@ const minHour = 9;
 
 $(function () {
 
-  let savedTask = localStorage.getItem("task" + this.id);
-  
-
-
-
-  let buttonSubmit = document.getElementsByClassName("btn")
-
+   let buttonSubmit = document.getElementsByClassName("btn")
+//saving the input to local storage
   for (i = 0; i < buttonSubmit.length; i++) {
     buttonSubmit[i].addEventListener("click", function (e) { 
       e.preventDefault();
-
-      let taskInput = document.querySelector('.textInput').value;
+      console.log(e.target.parentElement.previousElementSibling)
+      let taskInput = e.target.parentElement.previousElementSibling.value;
+      // document.querySelector('.textInput').value;
       localStorage.setItem("task " + this.id, taskInput);
       console.log("test", taskInput);
-
       console.log("button clicked", this.id)
+      console.log(e.target);
+      console.log(e.target.previousElementSibling);
 
+      let savedTask = localStorage.getItem("task" + this.id);
+      document.querySelector(".textInput").value = savedTask;
+      console.log(savedTask);
+      
+      let renderTask = function() { $(e.target.parentElement.previousElementSibling).text(savedTask);
+      }
+
+      renderTask();
+    //   localStorage.getItem("task");
+    //   $(e.target.parentElement.previousElementSibling).text(renderTask);
+    // console.log(renderTask);
     })
   }
 
+// //rendering saved info on page
+  // localStorage.getItem("task");
 
-  localStorage.getItem("task");
+  // let renderTask = function() {
+  //   $(e.target.parentElement.previousElementSibling).text(renderTask);
+  //   console.log(renderTask);
+  // }
+
+//   renderTask();
 
   console.log("hello" + document.querySelector(".textInput").id);
   // TODO: Add a listener for click events on the save button. This code should
@@ -65,8 +80,8 @@ let dayDate = setInterval(function () {
   , 10000)
 
 // Get the current hour
-// const currentHour = new Date().getHours();
-let currentHour = 14;
+const currentHour = new Date().getHours();
+// let currentHour = 14;
 
 
 // Get the element you want to change the class of
