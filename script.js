@@ -7,6 +7,10 @@ const minHour = 9;
 
 $(function () {
 
+  let savedTask = localStorage.getItem("task" + this.id);
+  
+
+
 
   let buttonSubmit = document.getElementsByClassName("btn")
 
@@ -19,7 +23,7 @@ $(function () {
       console.log("test", taskInput);
 
       console.log("button clicked", this.id)
-      
+
     })
   }
 
