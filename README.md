@@ -11,5 +11,8 @@ Then the hour and task are saved in local storage
 When the user refreshes the page
 Then the tasks saved persist on the page
 
-<img src="./assets/samplePage.jpg">
+<img src="Assets/samplePage.jpg.png">
 
+deployed page: https://levi-man.github.io/Scheduler/
+
+github repo: https://github.com/Levi-Man/Scheduler
